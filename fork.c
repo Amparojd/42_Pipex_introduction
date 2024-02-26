@@ -26,11 +26,8 @@ int main()
  
 	if (pid == 0) //Si está en el proceso hijo, el valor devuelto debe ser 0
 		printf("This is the child process. (pid: %d)\n", getpid());
-	else
+	else		
 		printf("This is the parent process. (pid: %d)\n", getpid());
  
 	return (0);
 }
-
-/*0 -> se está ejecutando el proceso hijo
- pid != 0 -> padre recibe el PID del proceso hijo (else)*/
